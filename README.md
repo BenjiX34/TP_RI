@@ -1,1 +1,5 @@
-# TP_RI
+# TP Recherche d'Information
+
+BARDY Benjamin
+
+ORTIZ Diégo
