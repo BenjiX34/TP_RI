@@ -2,3 +2,10 @@ bin/*
 indexRI/*
 !indexRI/.keep
 simplewiki.csv
+/bin/
+
+# Eclipse Core      
+.project
+
+# JDT-specific (Eclipse Java Development Tools)     
+.classpath
