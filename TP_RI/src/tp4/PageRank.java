@@ -26,7 +26,7 @@ public class PageRank {
 		double InitialPageRank;
 		double OutgoingLinks = 0;
 		double DampingFactor = 0.85;
-		double TempPageRank[] = new double[21];
+		double TempPageRank[] = new double[21]; //= new double[5];
 
 		int ExternalNodeNumber;
 		int InternalNodeNumber;
@@ -100,6 +100,8 @@ public class PageRank {
 		int nodes = 21;// in.nextInt();
 		PageRank p = new PageRank(nodes);
 		System.out.println("Enter the Adjacency Matrix with 1->PATH & 0->NO PATH Between two WebPages: \n");
+		//p.path = new int[][] {{0,1,0,0,0},{1,0,0,0,1},{1,1,0,1,1},{0,0,1,0,1},{1,0,0,1,0}}
+		
 		p.path = new int[][] { { 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 				{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 },
 				{ 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -130,11 +132,11 @@ public class PageRank {
 /*
  * 
  * 
- * Question 2 : 5 pages sont utilisés et on réalise 3 itérations;
+ * Question 2 : 5 pages sont utilisï¿½s et on rï¿½alise 3 itï¿½rations;
  * 
  * 
- * Question 5 : Avec matrixAdjency100, la page ayant le page rank le plus elevé est la page 29, soit, la page wikipedia nommée "Farming".
- * On notera que avec WebGraph on obtient le même résultat (mais pas le même score, avec la PageRank.Java on obtient 0.312, 
+ * Question 5 : Avec matrixAdjency100, la page ayant le page rank le plus elevï¿½ est la page 29, soit, la page wikipedia nommï¿½e "Farming".
+ * On notera que avec WebGraph on obtient le mï¿½me rï¿½sultat (mais pas le mï¿½me score, avec la PageRank.Java on obtient 0.312, 
  * alors que avec WebGraph on obtient un peu moins de 0.17).
  * 
  * 
